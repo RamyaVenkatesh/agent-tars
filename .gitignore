@@ -1,0 +1,88 @@
+# Sensitive files - DO NOT COMMIT
+.env
+credentials.json
+token.pickle
+*.pickle
+
+# Database files
+knowledge.db
+*.db
+*.sqlite
+*.sqlite3
+
+# API keys and secrets
+.env.*
+!.env.example
+config.json
+secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Claude-specific
+.claude/
+
+# Streamlit
+.streamlit/
+
+# Google OAuth
+token.json
+
+# Backup files
+*.bak
+*.backup

@@ -1,0 +1,23 @@
+# Core AI and ML dependencies
+anthropic>=0.3.0
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+numpy>=1.21.0
+
+# Web interface
+streamlit>=1.28.0
+
+# Document processing
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+
+# Google integration
+google-api-python-client>=2.0.0
+google-auth>=2.0.0
+google-auth-oauthlib>=2.0.0
+google-auth-httplib2>=0.1.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+pathlib>=1.0.0
