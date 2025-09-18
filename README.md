@@ -1,7 +1,6 @@
 # Agent Tars - Cloud-Based AI Personal Assistant
 
-An AI-powered personal assistant and knowledge management system built with Claude API, featuring intelligent document search, calendar integration, email management, and comprehensive business automation capabilities.
-
+An AI-powered personal assistant and knowledge management system built with Claude API that can perform document search, calendar integration and email management
 ## Features
 
 ### Personal Assistant Capabilities
@@ -15,11 +14,9 @@ An AI-powered personal assistant and knowledge management system built with Clau
 - **Enhanced Chunking**: Intelligent text segmentation optimized for large context windows
 - **Context-Aware Responses**: Maintains conversation history for coherent interactions
 
-### ⚡ Technical Excellence
+### Technical details
 - **Claude API Integration**: Powered by Anthropic's Claude with 200k token context window
 - **Google Services Integration**: Calendar and Gmail connectivity
-- **Professional UI**: Clean, Nordic-themed interface
-- **Real-Time Status**: System health monitoring for all connected services
 
 ## Quick Start
 
@@ -87,62 +84,12 @@ For calendar and email integration:
 5. Context and search results sent to Claude API for response generation
 6. Conversation history maintained for continuity
 
-## Usage
-
-### Chat Interface
-
-The main chat interface supports various query types:
-
-- **Knowledge Queries**: Ask about company policies, procedures, or documents
-- **Calendar Queries**: Check schedules, meetings, and appointments
-- **Analysis Requests**: Request analysis of documents or business information
-- **Email Composition**: Draft emails, create Gmail drafts, and send emails
-
-### Document Management
-
-- Upload documents through the web interface
-- Supports PDF, DOCX, TXT, and Markdown formats
-- Automatic text extraction and indexing
-- Metadata tracking for better organization
-
-### Professional Features
-
-- Clean, business-appropriate interface
-- Professional language and tone
-- Comprehensive context understanding
-- Actionable insights and recommendations
-
 ## Configuration
 
 ### Environment Variables
 
 - `ANTHROPIC_API_KEY`: Your Claude API key (required)
 - `STREAMLIT_SERVER_PORT`: Custom port for Streamlit (optional, default: 8501)
-
-### Agent Configuration
-
-Key settings in `ProfessionalKnowledgeAgent`:
-
-- `chunk_size`: Document chunk size (default: 1200 characters)
-- `overlap`: Chunk overlap for context continuity (default: 150 characters)
-- `top_k`: Number of search results to consider (default: 10-15)
-- `min_score`: Minimum similarity threshold (default: 0.2)
-- `max_context_length`: Maximum context for Claude API (default: 180,000 tokens)
-
-## Project Structure
-
-```
-agent-tars/
-├── src/
-│   └── agents/
-│       └── claude_agent.py      # Main agent implementation
-├── streamlit.py                 # Professional UI interface
-├── requirements.txt             # Python dependencies
-├── README.md                   # This file
-├── knowledge.db                # SQLite database (created on first run)
-├── credentials.json            # Google API credentials (optional)
-└── token.pickle               # Google OAuth cache (created automatically)
-```
 
 ## Development
 
@@ -155,23 +102,6 @@ The `ProfessionalKnowledgeAgent` class is designed for extensibility:
 - Customize prompts in system prompt variables
 - Extend document processing for new file types
 
-### UI Customization
-
-The Streamlit interface uses custom CSS for professional styling:
-
-- Modify styles in the `st.markdown()` CSS section
-- Adjust color scheme through CSS variables
-- Add new pages through the sidebar navigation
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Claude API Errors**: Verify your API key is set correctly
-2. **Google Services**: Ensure credentials.json is in the root directory
-3. **Document Processing**: Check file format support and file size limits
-4. **Vector Search**: Rebuild index if search results seem inconsistent
-
 ### Performance Optimization
 
 - Use larger chunk sizes for better context but fewer chunks
@@ -182,10 +112,3 @@ The Streamlit interface uses custom CSS for professional styling:
 ## License
 
 This project is designed for professional business use. Ensure compliance with Anthropic's terms of service and Google API terms when deploying.
-
-## Support
-
-For issues or questions:
-1. Check the troubleshooting section
-2. Review Claude API documentation
-3. Verify Google API setup if using calendar/email features
