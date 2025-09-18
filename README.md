@@ -1,16 +1,25 @@
-# Agent Tars - Professional AI Assistant
+# Agent Tars - Cloud-Based AI Personal Assistant
 
-A sophisticated AI-powered knowledge management system built with Claude API, featuring document search, calendar integration, and professional business automation capabilities.
+An AI-powered personal assistant and knowledge management system built with Claude API, featuring intelligent document search, calendar integration, email management, and comprehensive business automation capabilities.
 
 ## Features
 
-- **Advanced Knowledge Search**: Semantic search across documents using FAISS vector indexing
-- **Claude API Integration**: Powered by Anthropic's Claude for intelligent responses
-- **Large Context Window**: Utilizes Claude's 200k token context for comprehensive understanding
-- **Google Services**: Calendar and Gmail integration for business automation
-- **Professional UI**: Clean, minimalist interface designed for business environments
-- **Document Management**: Support for PDF, DOCX, TXT, and Markdown files
+### Personal Assistant Capabilities
+- **Calendar Management**: Check schedules, meetings, and appointments through natural language
+- **Email Automation**: Draft, compose, and send emails via Gmail integration
+- **Intelligent Intent Detection**: Automatically routes queries to appropriate handlers (knowledge, calendar, email, analysis)
+
+### Knowledge Management
+- **Advanced Document Search**: Semantic search across documents using FAISS vector indexing
+- **Multi-Format Support**: PDF, DOCX, TXT, and Markdown file processing
 - **Enhanced Chunking**: Intelligent text segmentation optimized for large context windows
+- **Context-Aware Responses**: Maintains conversation history for coherent interactions
+
+### ⚡ Technical Excellence
+- **Claude API Integration**: Powered by Anthropic's Claude with 200k token context window
+- **Google Services Integration**: Calendar and Gmail connectivity
+- **Professional UI**: Clean, Nordic-themed interface
+- **Real-Time Status**: System health monitoring for all connected services
 
 ## Quick Start
 
@@ -87,7 +96,7 @@ The main chat interface supports various query types:
 - **Knowledge Queries**: Ask about company policies, procedures, or documents
 - **Calendar Queries**: Check schedules, meetings, and appointments
 - **Analysis Requests**: Request analysis of documents or business information
-- **Email Composition**: Draft and compose professional emails (coming soon)
+- **Email Composition**: Draft emails, create Gmail drafts, and send emails
 
 ### Document Management
 
